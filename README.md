@@ -5,7 +5,7 @@
 ## 1. 🧩 Setup & Environment
 
 * Register for an OpenAI account and generate your **API key**. Store it securely (e.g., in a `.env` file).
-* Optionally, register with **Gemini** if planning to experiment with multimodal models.
+* Optionally, register with  [Gemini][20] if planning to experiment with multimodal models.
 * Verify basic access by making a simple “Hello world” request to the OpenAI API.
 
 ## 2. Prompt Engineering Fundamentals
@@ -104,3 +104,4 @@ This roadmap integrates practical engineering steps, the latest standards (MCP, 
 [17]: https://www.reuters.com/business/microsoft-wants-ai-agents-work-together-remember-things-2025-05-19/?utm_source=chatgpt.com "Microsoft wants AI 'agents' to work together and remember things"
 [18]: https://www.axios.com/2025/04/17/model-context-protocol-anthropic-open-source?utm_source=chatgpt.com "Hot new protocol glues together AI and apps"
 [19]: https://www.lifewire.com/best-free-ai-courses-8575868?utm_source=chatgpt.com "The Lifewire Guide to Online Free AI Courses"
+[20]: https://aistudio.google.com/app/apikey "Gemini Key"
