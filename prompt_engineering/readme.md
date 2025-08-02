@@ -31,7 +31,7 @@ Build a **prompt playground** to test different techniques on the same problem (
 
 ---
 
-### 🧾 3. Reasoning & Structured Output
+### 🧾 3. Reasoning & Structured Output --> use different libraries to get the structured output
 - [ ] Use CoT prompts to break down logic
 - [ ] Control formatting (e.g., JSON, Markdown, key-value)
 - [ ] Try multi-turn reasoning with CoT or ReAct
