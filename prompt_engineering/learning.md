@@ -1,3 +1,6 @@
+
+Generative AI (GenAI) refers to Artificial Intelligence that can be used to create new content such as articles or images, which previously only humans could do. In short, GenAI can create stuff. GenAI is expected to significantly change the way we work and live
+
 A prompt is the input you give to a language model (like ChatGPT, Claude, Gemini) to instruct it to produce a specific output. 
 Prompts are written in natural language and guide the behavior, tone, style, and content of the model's response.
 Prompts are like programming instructions written in plain English. You're giving the model a command set to interpret.
@@ -35,12 +38,18 @@ Models can only handle so much data within the context they consider during a ge
 Temperature and Token Management  
 The model performs best with temperature settings between 0.5-0.7, with lower values (closer to 0.5) producing more consistent mathematical proofs and higher values allowing for more creative problem-solving approaches. Monitor and adjust your token usage based on the complexity of your reasoning tasks - while the default max_completion_tokens is 1024, complex proofs may require higher limits.
 
-Prompt Engineering
-To ensure accurate, step-by-step reasoning while maintaining high performance:
+Instruction Prompting
 
-DeepSeek-R1 works best when all instructions are included directly in user messages rather than system prompts.
-Structure your prompts to request explicit validation steps and intermediate calculations.
-Avoid few-shot prompting and go for zero-shot prompting only.
+Role Prompting
 
+Shot-Based Prompting
+Zero-shot prompting: Use this when the task is simple, well-understood, or frequently encountered in the model's training data. It's efficient for tasks like basic arithmetic, general queries, or sentiment classification for common phrases.
 
-Generative AI (GenAI) refers to Artificial Intelligence that can be used to create new content such as articles or images, which previously only humans could do. In short, GenAI can create stuff. GenAI is expected to significantly change the way we work and live
+One-shot prompting: This is helpful for tasks that need more specific guidance or when the model struggles with ambiguity. Providing a single example can clarify the task, improving accuracy in tasks like basic classification or structured information extraction.
+
+Few-shot prompting: Best used for complex tasks requiring multiple examples to establish patterns. This technique is ideal for tasks that involve varied inputs, require precise formatting, or demand a higher degree of accuracy, such as generating structured outputs or handling nuanced classifications.
+
+Priming chatbots (also known as prompt priming or inception prompts) is a powerful technique used to guide a chatbot's behavior in a desired direction. By framing or structuring the initial prompt, you can influence how the AI interprets user input and tailor its responses to fit specific objectives.
+
+<!-- Generate code, test it, analyze failures, and iteratively improve until passing all tests. -->
+

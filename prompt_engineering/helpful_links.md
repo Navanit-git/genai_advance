@@ -16,6 +16,7 @@
 [Openai Prompt](https://platform.openai.com/docs/guides/prompting)
 https://learnprompting.org/docs/basics/generative_ai
 https://www.promptingguide.ai/
+https://learnprompting.org/docs/basics/prompt_structure
 
 
 https://www.phdata.io/blog/how-to-tune-llm-parameters-for-top-performance-understanding-temperature-top-k-and-top-p/
