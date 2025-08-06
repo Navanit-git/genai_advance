@@ -1,0 +1,5 @@
+How to test the llm ?
+Check for its COT.
+check for Thoery of Mind(ToM)
+
+Who won the Master’s Tournament the year Justin Bieber was born?

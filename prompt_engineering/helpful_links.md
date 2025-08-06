@@ -18,6 +18,8 @@ https://learnprompting.org/docs/basics/generative_ai
 https://www.promptingguide.ai/
 https://learnprompting.org/docs/basics/prompt_structure
 
+https://www.promptingguide.ai/guides/context-engineering-guide
+
 
 https://www.phdata.io/blog/how-to-tune-llm-parameters-for-top-performance-understanding-temperature-top-k-and-top-p/
 https://multimodalai.substack.com/p/understanding-llm-inference?utm_source=chatgpt.com
@@ -26,7 +28,6 @@ https://deepsense.ai/blog/llm-inference-optimization-how-to-speed-up-cut-costs-a
 https://www.aussieai.com/blog/llm-inference-optimization.htm?utm_source=chatgpt.com
 
 For top p, k, and temp best 
-https://www.phdata.io/blog/how-to-tune-llm-parameters-for-top-performance-understanding-temperature-top-k-and-top-p/?utm_source=chatgpt.com
 https://www.carneiro.dev/blog/ai/llm-sampling-parameters?utm_source=chatgpt.com
 
 [prompting](https://docs.promptlayer.com/introduction)
