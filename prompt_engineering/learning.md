@@ -179,3 +179,37 @@ Temperature changes how those probabilities are generated, while Top P and Top K
 Encoder-Decoder models, like T5 or BART, are trained with a sequence-to-sequence objective. Here, the encoder first compresses the input sequence into a latent representation, and then the decoder generates output tokens based on that representation.
 
 https://www.aussieai.com/research/decoding
+
+
+Did some inferencing using vllm, done some quantization also like fp8, awq, mlt. 
+
+Prompt Sensitivity Metrics
+Minor variations in wording, punctuation, or exemplar ordering can drastically change LLM outputs. The POSIX index quantifies this by measuring log-likelihood shifts under intent-preserving perturbations; higher POSIX means greater fragility
+The PromptRobust benchmark evaluates LLM resilience across character, word, sentence, and semantic-level adversarial attacks—showing that even GPT-4-level models can be tricked by typos or paraphrases 
+https://arxiv.org/pdf/2410.02185
+
+Typical adversarial attacks include:
+
+Prompt injection (hiding instructions in user text)
+https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-engineering-best-practices/common-attacks.html?utm_source=chatgpt.com
+https://github.com/kowndinya-renduchintala/POSIX?tab=readme-ov-file
+Suffix attacks (appending malicious sub-prompts)
+Persona hijacks (forced role switching)
+Template leaks (extracting system messages)
+Fake completions (guiding model off-track)
+Escape-Deletion attack
+
+Types of Guardrails
+Input guardrails: Sanitize or block unsafe user inputs before they reach the model 
+OpenAI Cookbook
+Output guardrails: Validate generated text against schemas, filters, or rules—and reject or correct violations 
+OpenAI Cookbook
+Role enforcement: Embed strict “You are a …” instructions and delimiters to prevent persona hijacking 
+AWS Documentation
+Self-checks & audits: Ask the model to reflect on its own output (“Does this comply with policy?”) within the prompt 
+
+Programming Guardrails
+Regex & CFG constraints: Enforce output format via regular expressions or context-free grammars, supported by Guidance 
+GitHub
+Schema-based validation: Use Pydantic or RAIL (GuardrailsAI) to define expected output classes and automatically re-prompt on mismatches 
+Feedback-driven filtering: TruLens lets you hook in custom feedback functions (e.g. toxicity, relevance) to filter context or responses at runtime 

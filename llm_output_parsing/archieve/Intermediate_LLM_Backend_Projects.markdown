@@ -222,3 +222,26 @@ This document outlines 10 intermediate backend projects designed to enhance your
 
 ## Conclusion
 These 10 projects provide a comprehensive path to mastering LLM output methods in backend development. By implementing functions/tools, handling structured outputs, and incorporating reasoning, you’ll build skills that are directly applicable to industrial scenarios like automation, data analysis, and intelligent systems. Start with one project, iterate based on feedback, and explore additional libraries like Instructor or Haystack to deepen your expertise as of August 6, 2025.
+
+
+
+## Project Ideas
+
+To apply your learning, consider these real-world-inspired projects:
+
+1. **E-Commerce Customer Support Bot**:
+   - Use tool calling to fetch order status and shipping details.
+   - Apply reasoning to handle complex queries (e.g., “Why is my order delayed?”).
+   - Return structured JSON responses for CRM integration.
+2. **Travel Planner Assistant**:
+   - Reason through trip planning steps (flights, hotels, activities).
+   - Call APIs for real-time data and format outputs in JSON.
+   - Handle multi-city itineraries with multi-hop reasoning.
+3. **Logistics Route Planner**:
+   - Reason through route constraints (distance, time, weather).
+   - Call route optimization and weather APIs.
+   - Return structured JSON with route details and costs.
+4. **Decision Support System**:
+   - Analyze business scenarios (e.g., product launches) using CoT.
+   - Call data analytics APIs and format results in structured formats.
+   - Provide actionable insights with reasoning explanations.
