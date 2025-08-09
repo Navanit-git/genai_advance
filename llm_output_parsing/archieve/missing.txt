@@ -1,0 +1,27 @@
+Things to add (important, currently missing)
+Validation & repair loop
+Automated validator (Pydantic/JSON Schema) → on failure, do an auto-repair prompt (e.g., fix_json) → retry or escalate. Show examples and metrics for schema compliance.
+
+Testing & Metrics
+Unit tests for tools/functions, synthetic test cases for structured output, schema-compliance rate, precision/recall for extraction tasks, latency and cost per call.
+
+Monitoring & observability
+Logging (requests/responses), schema failure rates, tool call success/failure, latency tracking, alerting.
+
+Security, privacy & access control
+Sanitization of PII before sending to LLMs, least-privilege for tools/APIs, rate-limiting, API key management, and audit logs.
+
+Robustness / adversarial input
+Adversarial tests, prompt delimiters, input sanitization, guardrails (role prompts, validators), and fallbacks to human review for edge cases.
+
+Cost & performance considerations
+Sampling tradeoffs (temperature, n), batching, parallel tool calls, caching results for repeated queries.
+
+Human-in-the-loop flow
+Escalation rules when model confidence is low or schema validation fails.
+
+Evaluation datasets & benchmarks
+Create small labeled datasets (resumes → JSON, invoices → fields) to measure extraction accuracy over time.
+
+Examples & exercises
+Concrete hands-on exercises (build a toy agent that: parses an invoice → updates DB → emails receipt), plus sample notebooks.

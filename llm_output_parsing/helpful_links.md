@@ -15,3 +15,16 @@ https://docs.mistral.ai/capabilities/structured-output/json_mode/
 https://docs.mistral.ai/capabilities/function_calling/
 
 https://console.mistral.ai/api-keys
+
+https://www.deeplearning.ai/short-courses/dspy-build-optimize-agentic-apps/
+
+https://www.deeplearning.ai/short-courses/getting-structured-llm-output/
+
+https://www.deeplearning.ai/short-courses/function-calling-and-data-extraction-with-llms/
+
+
+"Tool call"-https://cookbook.openai.com/examples/structured_outputs_multi_agent
+
+https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/Manus%20Agent%20Tools%20%26%20Prompt/tools.json
+
+https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/Lovable/Agent%20Tools.json

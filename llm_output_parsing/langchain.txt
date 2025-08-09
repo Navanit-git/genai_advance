@@ -1,0 +1,15 @@
+Langchain has 3 major product I can see
+Langchain LangChain is a framework for developing applications powered by large language models (LLMs).
+LangGraph LangGraph is built for developers who want to build powerful, adaptable AI agents
+LangSmith LangSmith is a platform for building production-grade LLM applications. It allows you to closely monitor and evaluate your application, so you can ship quickly and with confidence.
+
+
+
+LangChain Expression Language(LCEL)
+LCEL is an orchestration solution -- it allows LangChain to handle run-time execution of chains in an optimized way.
+While we have seen users run chains with hundreds of steps in production, we generally recommend using LCEL for simpler orchestration tasks. 
+Here are some guidelines:
+
+If you are making a single LLM call, you don't need LCEL; instead call the underlying chat model directly.
+If you have a simple chain (e.g., prompt + llm + parser, simple retrieval set up etc.), LCEL is a reasonable fit, if you're taking advantage of the LCEL benefits.
+If you're building a complex chain (e.g., with branching, cycles, multiple agents, etc.) use LangGraph instead. Remember that you can always use LCEL within individual nodes in LangGraph.

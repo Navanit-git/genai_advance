@@ -207,4 +207,6 @@ marimo/_lsp/
 __marimo__/
 
 
-prompt_engineering/keys.json
+# Keys files (ignore everywhere)
+keys.json
+**/keys.json

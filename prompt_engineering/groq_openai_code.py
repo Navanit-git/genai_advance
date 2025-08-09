@@ -16,10 +16,10 @@ groq_key_3 =api_key["grok_api_key_3"]
 
 
 
-# client = openai.OpenAI(
-#     base_url="https://api.groq.com/openai/v1",
-#     api_key=groq_key_1
-# )
+client = openai.OpenAI(
+    base_url="https://api.groq.com/openai/v1",
+    api_key=groq_key_1
+)
 
 # #Normal chat completion
 # chat_completion = client.chat.completions.create(
