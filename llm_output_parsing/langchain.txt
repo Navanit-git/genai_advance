@@ -13,3 +13,17 @@ Here are some guidelines:
 If you are making a single LLM call, you don't need LCEL; instead call the underlying chat model directly.
 If you have a simple chain (e.g., prompt + llm + parser, simple retrieval set up etc.), LCEL is a reasonable fit, if you're taking advantage of the LCEL benefits.
 If you're building a complex chain (e.g., with branching, cycles, multiple agents, etc.) use LangGraph instead. Remember that you can always use LCEL within individual nodes in LangGraph.
+
+langchain has below types of output parser support. 
+String-        Parses texts from message objects. Useful for handling variable formats of message content (e.g., extracting text from content blocks).
+JSON object-   Returns a JSON object as specified. You can specify a Pydantic model and it will return JSON for that model. Probably the most reliable output parser for getting structured data that does NOT use function calling.
+XML (dict)- 	Returns a dictionary of tags. Use when XML output is needed. Use with models that are good at writing XML (like Anthropic's).
+csv(List[str])-  Returns a list of comma separated values.
+OutputFixing-   Wraps another output parser. If that output parser errors, then this will pass the error message and the bad output to an LLM and ask it to fix the output.
+RetryWithError-  Wraps another output parser. If that output parser errors, then this will pass the original inputs, the bad output, and the error message to an LLM and ask it to fix it. Compared to OutputFixingParser, this one also sends the original instructions.
+Pydantic(pydantic.BaseModel)-	Takes a user defined Pydantic model and returns data in that format.
+YAML (pydantic.BaseModel)-	Takes a user defined Pydantic model and returns data in that format. Uses YAML to encode it.
+Pandas DataFrame (dict)- 	Useful for doing operations with pandas DataFrames.
+Enum (Enum)-	Parses response into one of the provided enum values.
+Datetime (datetime.datetime)- 	Parses response into a datetime string.
+Structured (Dict[str, str])- 	An output parser that returns structured information. It is less powerful than other output parsers since it only allows for fields to be strings. This can be useful when you are working with smaller LLMs.

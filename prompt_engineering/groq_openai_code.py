@@ -95,7 +95,8 @@ client = Groq(
     api_key=groq_key_1,
 )
 completion = client.chat.completions.create(
-    model="deepseek-r1-distill-llama-70b",
+    # model="deepseek-r1-distill-llama-70b",
+    model ="qwen/qwen3-32b",
     messages=[
         {
             "role": "user",
@@ -106,8 +107,12 @@ completion = client.chat.completions.create(
     # max_completion_tokens=1024,
     top_p=0.95,
     stream=True,
-    reasoning_format="raw"
+    # reasoning_format="raw"
+    reasoning_effort="none",  # parsed, raw, hidden, none
 )
+
+#  "reasoning_format": self.reasoning_format,
+            
 
 for chunk in completion:
     print(chunk.choices[0].delta.content or "", end="")

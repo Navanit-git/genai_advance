@@ -1,0 +1,7 @@
+https://docs.llamaindex.ai/en/stable/getting_started/concepts/
+
+LLamaCloud : It is an end-to-end managed service for document parsing, extraction, indexing, and retrieval - allowing you to get production-quality data for your AI agent
+llama_deploy | Deploy your agentic workflows as production microservices https://github.com/run-llama/llama_deploy
+LlamaHub | A large (and growing!) collection of custom data connectors https://llamahub.ai/
+
+LlamaIndex provides a framework for building agents including the ability to use RAG pipelines as one of many tools to complete a task.
