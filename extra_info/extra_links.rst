@@ -11,3 +11,9 @@ https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html#a-conceptu
 https://www.youtube.com/playlist?app=desktop&list=PLlrxD0HtieHjYfVUpGl_-ai7D6FRBjV-d (Microsoft MCP)
 
 https://danielvanstrien.xyz/posts/2025/hf-jobs/vllm-batch-inference.html (vLLM batch inference read)
+
+https://www.linkedin.com/posts/armand-ruiz_the-future-of-ai-is-agentic-lets-learn-activity-7360263953052024832-ehcY/
+
+https://docs.llamaindex.ai/en/stable/understanding/agent/
+
+https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/ strivers-a2z-dsa-course

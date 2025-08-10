@@ -44,3 +44,5 @@ https://python.langchain.com/docs/how_to/output_parser_retry/
 https://python.langchain.com/docs/how_to/output_parser_fixing/
 
 https://pypi.org/project/json_partial_python/#data
+
+https://www.youtube.com/watch?v=ZIvcVJGtCrY
