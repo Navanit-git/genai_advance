@@ -32,6 +32,9 @@ https://www.carneiro.dev/blog/ai/llm-sampling-parameters?utm_source=chatgpt.com
 
 [prompting](https://docs.promptlayer.com/introduction)
 
+[llm inference](https://bentoml.com/llm/llm-inference-basics/what-is-llm-inference)
+
+[Prefix caching](https://bentoml.com/llm/inference-optimization/prefix-caching)
  
 
 
