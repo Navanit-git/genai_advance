@@ -9,3 +9,5 @@ LlamaIndex provides a framework for building agents including the ability to use
 https://docs.llamaindex.ai/en/stable/examples/llm/google_genai/
 
 https://docs.llamaindex.ai/en/stable/examples/llm/groq/
+
+https://docs.llamaindex.ai/en/stable/understanding/extraction/lower_level/
