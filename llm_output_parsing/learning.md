@@ -11,3 +11,6 @@ To maximize the quality of model generations, we recommend the following:
 Name keys clearly and intuitively
 Create clear titles and descriptions for important keys in your structure
 Create and use evals to determine the structure that works best for your use case
+
+
+Pydantic is a widely-used data validation and conversion library. It relies heavily on Python type declarations. Pydantic supports converting Pydantic classes into JSON-serialized schema objects which conform to popular standards. 

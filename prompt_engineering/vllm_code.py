@@ -97,7 +97,7 @@ print(f"reasoning_content: {response.choices[0].message.reasoning_content}")
 
 
 
-#  vllm serve Qwen/Qwen3-4B-AWQ  --reasoning-parser qwen3 --max-model-len 4096  --enable-auto-tool-choice --tool-call-parser hermes --quantization awq --gpu_memory_utilization 0.9
+#  vllm serve Qwen/Qwen3-4B  --reasoning-parser qwen3 --max-model-len 4096  --enable-auto-tool-choice --tool-call-parser hermes --quantization awq --gpu_memory_utilization 0.9 --quantization bitsandbytes --load-format bitsandbytes 
 
 
 # Qwen/Qwen3-4B-AWQ --Got OOM

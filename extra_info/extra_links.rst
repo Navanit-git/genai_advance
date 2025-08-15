@@ -18,3 +18,14 @@ https://docs.llamaindex.ai/en/stable/understanding/agent/
 
 https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/ strivers-a2z-dsa-course
 
+https://course.fast.ai/Lessons/lesson1.html 
+
+https://huggingface.co/learn/llm-course/chapter1/1
+
+https://huggingface.co/learn
+
+https://bentoml.com/llm/llm-inference-basics
+
+
+https://www.youtube.com/playlist?app=desktop&list=PLCRMIe5FDPsd0gVs500xeOewfySTsmEjf
+
