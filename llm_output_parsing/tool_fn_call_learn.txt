@@ -1,0 +1,45 @@
+https://platform.openai.com/docs/guides/function-calling
+https://platform.openai.com/docs/guides/tools
+https://platform.openai.com/docs/guides/prompt-caching
+https://ai.google.dev/gemini-api/docs/function-calling?example=meeting
+
+Function calling (also known as tool calling) provides a powerful and flexible way for OpenAI models to interface with external systems and access data outside their training data. 
+
+A function or tool refers in the abstract to a piece of functionality that we tell the model it has access to. As a model generates a response to a prompt, it may decide that it needs data or functionality provided by a tool to follow the prompt's instructions.
+
+When we make an API request to the model with a prompt, we can include a list of tools the model could consider using. For example, if we wanted the model to be able to answer questions about the current weather somewhere in the world, we might give it access to a get_weather tool that takes location as an argument.
+
+A function call output or tool call output refers to the response a tool generates using the input from a model's tool call. The tool call output can either be structured JSON or plain text, and it should contain a reference to a specific model tool call (referenced by call_id in the examples to come).
+
+To complete our weather example:
+
+    The model has access to a get_weather tool that takes location as an argument.
+    In response to a prompt like "what's the weather in Paris?" the model returns a tool call that contains a location argument with a value of Paris
+    Our tool call output might be a JSON structure like 
+    {"temperature": "25", "unit": "C"}, 
+    indicating a current temperature of 25 degrees.
+    We then send all of the tool definition, the original prompt, the model's tool call, and the tool call output back to the model to finally receive a text response like:
+        "The weather in Paris today is 25C."
+
+
+Functions versus tools
+    A function is a specific kind of tool, defined by a JSON schema. A function definition allows the model to pass data to your application, where your code can access data or take actions suggested by the model.
+
+    In addition to function tools, there are custom tools (described in this guide) that work with free text inputs and outputs.
+
+    There are also built-in tools that are part of the OpenAI platform. These tools enable the model to search the web, execute code, access the functionality of an MCP server, and more.
+
+
+
+Tool calling is a multi-step conversation between your application and a model via the OpenAI API. The tool calling flow has five high level steps:
+    Make a request to the model with tools it could call
+    Receive a tool call from the model
+    Execute code on the application side with input from the tool call
+    Make a second request to the model with the tool output
+    Receive a final response from the model (or more tool calls)
+
+Parallel function calling
+In addition to single turn function calling, you can also call multiple functions at once. Parallel function calling lets you execute multiple functions at once and is used when the functions are not dependent on each other. This is useful in scenarios like gathering data from multiple independent sources, such as retrieving customer details from different databases or checking inventory levels across various warehouses or performing multiple actions such as converting your apartment into a disco.
+
+Compositional function calling
+Compositional or sequential function calling allows Gemini to chain multiple function calls together to fulfill a complex request. For example, to answer "Get the temperature in my current location", the Gemini API might first invoke a get_current_location() function followed by a get_weather() function that takes the location as a parameter.
