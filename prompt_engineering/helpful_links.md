@@ -35,6 +35,8 @@ https://www.carneiro.dev/blog/ai/llm-sampling-parameters?utm_source=chatgpt.com
 [llm inference](https://bentoml.com/llm/llm-inference-basics/what-is-llm-inference)
 
 [Prefix caching](https://bentoml.com/llm/inference-optimization/prefix-caching)
+
+[Json prompting](https://www.marktechpost.com/2025/08/23/json-prompting-for-llms-a-practical-guide-with-python-coding-examples/?amp)
  
 
 

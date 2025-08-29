@@ -2,6 +2,11 @@ https://platform.openai.com/docs/guides/function-calling
 https://platform.openai.com/docs/guides/tools
 https://platform.openai.com/docs/guides/prompt-caching
 https://ai.google.dev/gemini-api/docs/function-calling?example=meeting
+https://python.langchain.com/docs/concepts/tools/
+
+https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/overview
+
+https://grok.com/chat/03e5c9e2-1962-4c3b-a80e-3404f62983b5
 
 Function calling (also known as tool calling) provides a powerful and flexible way for OpenAI models to interface with external systems and access data outside their training data. 
 
